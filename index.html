@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="../_CSS/styles.css">
+  
+  <title>Hulmeville Borough - 2020</title>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../_CSS/styles.css">  <link rel="stylesheet" type="text/css" href="../_CSS/styles.css">
+  <link rel="stylesheet" type="text/css" href="thispage.css">
+
+<style> 
+</style>
+
+<script>
+  $(document).ready(function(){
+    $('.card-body').css('color','#57130F');
+    $('.card-footer').addClass('text-red');
+  });
+</script>
+  </head>
+
+  <body>
+   <!-- nav section -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 sticky-top" id="main_nav">
+  <div class="container navbar-fonts">
+    <a href="../home/" class="navbar-brand">
+      <img src="../_IMG/HB_logo.png" alt="" width="75" height="75">
+      <img src="../_IMG/HB_logo_2.png" height="75">
+    </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="../home/">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../police/">Police</a>
+            </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Residents</a>
+                  <div class="dropdown-menu">
+                    <a href="../history/" class="dropdown-item">Borough History</a>
+                    <a href="../ordinances" class="dropdown-item">Borough ordinances</a>
+                    <a href="../meetings/events.php" class="dropdown-item">Community events</a>
+                    <a href="../flood/" class="dropdown-item">Flood insurance information</a>
+                    <a href="../forms/" class="dropdown-item">Forms and documents</a>
+                    <a href="../ext_links/" class="dropdown-item">Links to external organizations and services</a>
+                    <a href="../public_services/" class="dropdown-item">Public services</a>
+                    <a href="../finances/" class="dropdown-item">Taxes</a>
+                    <a href="../trash/" class="dropdown-item">Trash and recycling</a>
+                  </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Business</a>
+                  <div class="dropdown-menu">
+                    <a href="../ordinances/" class="dropdown-item">Borough ordinances</a>
+                <!-- Hide next link until better developed
+                    <a href="../code_enforcement" class="dropdown-item">Code enforcement</a>
+                -->
+                    <a href="../fire_marshal/index.php#fsi" class="dropdown-item">Fire safety inspections</a>
+                    <a href="../forms/" class="dropdown-item">Forms and documents</a>
+                    <a href="../ext_links/" class="dropdown-item">Links to external organizations and services</a>
+                    <!--
+                    <a href="#" class="dropdown-item">Rental property inspection program</a>
+                    -->
+                  </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Administration</a>
+                  <div id="admin_sub_menu" class="dropdown-menu">
+                    <a href="../announcements/" class="dropdown-item">Announcements</a>
+                    <a href="../boards/" class="dropdown-item">Boards & Committees</a>
+                    <a href="../organization/" class="dropdown-item">Borough Organization</a>
+                <!-- Hide next link until better developed
+                    <a href="../code_enforcement" class="dropdown-item">Code enforcement</a>
+                -->
+                    <a href="../finances/" class="dropdown-item">Finances</a>
+                    <a href="../forms/" class="dropdown-item">Forms & Documents</a>
+                    <a href="../meetings/" class="dropdown-item">Meetings</a>
+                    <a href="../minutes/" class="dropdown-item">Minutes of Meetings</a>
+                    <a href="../right-to-know/" class="dropdown-item">Right to Know</a>
+                    <a href="../contact/" class="dropdown-item">Contact Us</a>
+                  </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Departments</a>
+                <div class="dropdown-menu">
+                  <a href="../emergency_mgmt/" class="dropdown-item">Emergency Management</a>
+                  <a href="../fire_marshal/" class="dropdown-item">Fire Marshal</a>
+                  <a href="../ordinances/" class="dropdown-item">Planning/Zoning</a>
+                  <a href="../police/" class="dropdown-item">Police</a>
+                  <a href="../public_services/" class="dropdown-item">Public services</a>
+                  <a href="../storm_water/" class="dropdown-item">Storm Water Management</a>
+<!-- Hide next link until better developed
+                  <a href="../home/oops.php" class="dropdown-item">Streets</a>
+-->
+                  <a href="../trash/" class="dropdown-item">Trash and recycling</a>
+                  <a href="../authority" class="dropdown-item">Water Authority</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="../howdoi/" class="nav-link">How do I ... ?</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+</nav>    
+   <section id="showcase">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+       
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="text-dark"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Borough Hall</h1>
+              <p class="lead">Hulmeville played a large role in the development of Bucks County.  At one time, the current Borough Hall operated as a school with grades 1 through 12.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-5">Public playground</h1>
+              <p class="lead">Hulmeville is a quiet, friendly place to raise children.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">History</h1>
+              <p class="lead">Hulmeville played a large role in the development of Bucks County.  Some of the first paved streets in Bucks were in Hulmeville.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    </div>
+       </div>
+     </div>
+  </section>
+
+<section id="welcome">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-5 text-center">Welcome</h1>
+        <p>Welcome to the Hulmeville Borough website. This website is intended to provide our residents and visitors with the latest information on the borough operation, emergency and non-emergency public services, meetings and events, along with information on how to contact us. This website is, and always will be, a work in progress in order to bring the most current and useful information to you.</p>
+
+        <p>We believe that Hulmeville Borough is a wonderful place to live, work, and raise a family. It is the intention of the Mayor and Borough Council to provide professional, efficient, timely, and fiscally responsible services in order to continue to support this quality of life.</p>
+
+        <p>Please enjoy browsing through our website.</p>
+
+        <p>We would enjoy hearing from you, with comments or questions about either our website or the Borough. Please <a href="../contact/">contact us</a> with any comments, questions, feedback and/or suggestions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="special" class="pt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="textwhite">Coronavirus/COVID-19</h2>
+        <a href="../covid/" class="textwhite">Visit our coronavirus/COVID-19 web page for the latest news and helpful links to get you through these trying times.</a>      
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Departments section -->
+<section id="departments" class="py-5">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-6 mb-4 text-centered">
+        <i class="fas fa-users fa-4x mb-2"></i>
+        <h3>Administration</h3>
+        <p>Learn more about Hulmeville's form of government, meet the staff, view minutes of meetings and more.</p>
+        <a href="../boards/" >Boards & committees</a><br />
+        <a href="../organization/" >Borough organization</a><br />
+        <a href="../code_enforcement/" >Code enforcement</a><br />
+        <a href="../emergency_mgmt/" >Emergency management</a><br />
+        <a href="../finances/" >Finances</a><br />
+        <a href="../forms/" >Forms & documents</a><br />
+        <a href="../meetings/" >Meetings</a><br />
+        <a href="../minutes/" >Minutes of meetings</a><br />
+        <a href="../right-to-know/" >Right to know</a><br />
+        <a href="../contact/" >Contact us</a><br />
+      </div>
+      
+      <div class="col-md-6 mb-4 text-centered">
+      <i class="fas fa-user-tie fa-4x mb-2"></i>  <!-- previously used fa-money-bill-alt fa-4x -->
+        <h3>Departments</h3>
+        <p>Information on the various departments and services offered by the Borough.</p>
+        <a href="../emergency_mgmt/" >Emergency management</a><br />
+        <a href="../fire_marshal/" >Fire Marshal</a><br />
+        <a href="../ordinances/" >Planning/Zoning</a><br />
+        <a href="../police/" >Police</a><br />
+        <a href="../storm_water/" >Storm water management</a><br />
+        <!-- 
+          <a href="../home/oops.php" >Streets</a><br />
+        -->
+        <a href="../trash/" >Waste pickup/recycling</a><br />
+        <a href="../authority/" >Water authority</a><br />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Announcements section -->
+<section id="announcements" class="py-3">
+  <div class="container">
+  <h3 class="textwhite">Recent announcements</h3>
+  <p>The following are the most recent announcements posted to the website.  To view all active announcements, <a class="textwhite" href="../announcements"><strong><em>visit the Announcements page.</em></strong></a></p>
+
+  
+<!-- Display the retrieved announcements -->
+  <div id="accordion">
+    <div class="card"><div class="card-header"><h5><a href="#collapse48" data-parent="#accordion" data-toggle="collapse">REMINDER! Notice of parking ordinance restricting parking during snow conditions</a></h5></div><div id="collapse48" class="collapse"><div class="card-body" "><p>In accordance with the Borough snow events ordinance, everyone is reminded that parking on Borough streets is prohibited from 1 hour after snow begins to fall and until 12 hours after the snow ceases to fall.  Anyone in violation of the ordinance is subject to fines of up to $300.</p>
+
+<p><a href="../announcements/documents/snow_ordinance.pdf" target="_blank">Click to read the Borough Ordinance.</a></p></div><div class="card-footer">Posted 2020-12-15</div></div></div><div class="card"><div class="card-header"><h5><a href="#collapse47" data-parent="#accordion" data-toggle="collapse">Christmas Tree Pickup Dates</a></h5></div><div id="collapse47" class="collapse"><div class="card-body" ">Leck Waste Services will be picking up Christmas trees on 2 dates this holiday season.  The dates are Wednesday, January 13 and Wednesday, January 20.  The trees should be on the curb by 6 a.m. on those days and should NOT be bagged.  </div><div class="card-footer">Posted 2020-12-14</div></div></div><div class="card"><div class="card-header"><h5><a href="#collapse46" data-parent="#accordion" data-toggle="collapse">Wolf Administration Announces New COVID-19 Guidelines - Issued 11/17/20</a></h5></div><div id="collapse46" class="collapse"><div class="card-body" "><p>In response to the resurgence of the coronavirus, Secretary of Health, Dr. Rachel Levine, announced new guidelines which impact the healthcare system, persons traveling to the state, a strengthened order regarding wearing masks, and recommendations for colleges and universities.</p>
+
+<p><a href="../covid/">Click to go to our COVID-19 announcements page to read more.</a></p></div><div class="card-footer">Posted 2020-11-18</div></div></div><div class="card"><div class="card-header"><h5><a href="#collapse33" data-parent="#accordion" data-toggle="collapse">REMINDER! Notice of parking ordinance restricting parking during snow conditions</a></h5></div><div id="collapse33" class="collapse"><div class="card-body" "><p>At its regularly scheduled meeting on Monday evening, June 6, 2016, the Hulmeville Borough Council enacted an&nbsp;<a href="http://www.hulmeville-pa.gov/documents/Proposed_snow_ordinance.pdf" target="_blank">ordinance prohibiting parking</a>&nbsp;on Borough streets during a snow storm.</p>
+
+<p>A copy of the Ordinance may be examined at the office of the Borough Secretary, Dorothy Omietanski, 321 Main Street, Hulmeville, PA, by appointment arranged by telephone to 215-757-6531.&nbsp;&nbsp;<a href="http://www.hulmeville-pa.gov/documents/Proposed_snow_ordinance.pdf" target="_blank">(Click here to view online)</a></p>
+</div><div class="card-footer">Posted 2020-11-01</div></div></div><div class="card"><div class="card-header"><h5><a href="#collapse45" data-parent="#accordion" data-toggle="collapse">Trash pickup reminder</a></h5></div><div id="collapse45" class="collapse"><div class="card-body" "><p>As a reminder, Leck will only pickup ordinary household waste.&nbsp; Some guidelines are:</p>
+
+<ul>
+
+<li>Residential waste, or standard household waste, includes food waste, rags, old clothes, leather, rubber, glass and crockery, and other household items&lt</li>
+
+<li>A maximum of 4 trash containers, not weighing more than 50 lbs each, are allowed</li>
+
+<li>Construction debris/buildng materials, hazardous materials, or electronics are not allowed</li>
+
+<li>One bulk item is allowed per week</li>
+
+</ul>
+
+<p>For more information <a href="../trash/documents/leck_services.pdf" target="_blank">
+refer to Leck's informational brochure</a></p></div><div class="card-footer">Posted 2020-11-01</div></div></div><div class="card"><div class="card-header"><h5><a href="#collapse44" data-parent="#accordion" data-toggle="collapse">Rewriting Hulmeville's History - Upcoming book for the Borough Sesquicentennial(2022)</a></h5></div><div id="collapse44" class="collapse"><div class="card-body" "><p>In 2022 Hulmeville will celebrate the 150th anniversary of its incorporation as an independent borough. Prior to 1872, Hulmeville was an informal village that was part of Middletown Township. As part of our plans to celebrate the sesquicentennial, we are working on updating the written History of Hulmeville. A well-documented history was written in 1972 as Hulmeville celebrated its 100th anniversary but with updated research tools we hope to expand on this history of the first hundred years and add some of the major developments of the subsequent fifty years. While this is a work in progress, periodically over the coming months we will add some stories from the &quot;new&quot; history of Hulmeville to the website. These new stories, while in draft form, will be a part of the revised history that will be published and for sale in 2022.</p>
+<p><a href="../history/">Go to the History page to read short essays from the upcoming book.</a></p></div><div class="card-footer">Posted 2020-10-28</div></div></div>  </div>
+  </div>
+</section>
+
+<!-- Meetings section -->
+
+<section id="info" class="py-3">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6">
+        <h3>Meetings</h3> 
+        <p>The following is a list of meetings occurring in the next 4 weeks.  For a more complete list, visit our <a href="../meetings/" class="text-danger">Meetings page.</a></p> 
+        <hr />
+        <p><span class="fas fa-angle-double-right"></span>  Fri, Jan 15, 2021 - Council worksession - 7:30 pm at Borough hall</p><p><span class="fas fa-angle-double-right"></span>  Mon, Jan 25, 2021 - Water authority meeting - 7:00 pm at Borough hall</p><p><span class="fas fa-angle-double-right"></span>  Mon, Feb 01, 2021 - Council meeting - 7:30 pm at Borough hall</p>          
+      </div>
+      
+      <div class="col-md-6">
+        <h3>Community Events</h3>
+        <p class="">The following are community events occuring in the near future.  For details on any event, and for a more complete list of events, visit our <a href="../meetings/events.php" class="text-warning">Community Events page.</a></p>
+        <hr />
+              </div>
+		</div>
+  </div>
+</section>
+
+<section id="newsletter" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+      <h3 class="textwhite">Borough Newsletter</h3>
+        <p>The Borough publishes a newsletter, approximately 4 times per year.  It is available on this website and mailed free of charge to every residence and business in the Borough, as well as other interested subscribers.</p>
+        <p>If you or someone you know is not receiving the newsletter, please let us know.</p>
+        <p>You can read the latest newsletter by clicking on the icon to the right (or below) or <a href="#" data-toggle="modal" data-target="#newsletterModal" style="color: red">click here to read previous editions of the newsletter.</a></p>
+
+        
+
+      </div>
+
+      <div class="col-md-2">
+        <div class="figure_150">
+          <a href="newsletters/2021_Q1.pdf" target="_blank">
+            <img class="photo" src="images/newsletter.jpg" alt="Latest newsletter" title="Read the latest newsletter" width="100" height="150" />
+          </a>
+          <p class="caption">Click to read the latest newsletter</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<div id="newsletterModal" role="dialog" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Borough Newsletters</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <ul>
+        <li><a href="newsletters/2020_Q3.pdf" target="_blank">2020 Fall</a></li>
+        <li><a href="newsletters/2020_Q1.pdf" target="_blank">2020 Spring</a></li>
+        <li><a href="newsletters/2019_Q4.pdf" target="_blank">2019 Winter</a></li>
+        <li><a href="newsletters/2019_Q2.pdf" target="_blank">2019 Summer</a></li>
+        <li><a href="newsletters/2019_Q1.pdf" target="_blank">2019 Spring</a></li>
+        <li><a href="newsletters/2018_Q4.pdf" target="_blank">2018 Winter</a></li>
+        <li><a href="newsletters/2018_Q3.pdf" target="_blank">2018 Fall</a></li>
+        <li><a href="newsletters/2018_Q2.pdf" target="_blank">2018 Summer</a></li>
+        <li><a href="newsletters/2017_Q4.pdf" target="_blank">2017 Winter</a></li>
+        <li><a href="newsletters/2017_Q3.pdf" target="_blank">2017 Fall</a></li>
+        <li><a href="newsletters/2017_Q2.pdf" target="_blank">2017 Summer</a></li>
+        <li><a href="newsletters/2017_Q1.pdf" target="_blank">2017 Spring</a></li>
+        </ul>
+
+      </div>
+      <div class="modal-footer">
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- end of modals -->
+
+
+<!-- Footer Section -->
+<footer id="main-footer" class="py-2 bg-dark text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <p class="lead small">
+            Copyright &copy; 2012 - <span id="year"></span>, Hulmeville Borough, Bucks County, PA - All Rights Reserved
+          </p>
+          <a href="../home/disclaimer.php">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script> 
+    <!-- end here -->
+  <script>
+    // Configure slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
+  </script>
+</body>
+
+</html>
